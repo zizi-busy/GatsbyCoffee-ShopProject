@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;700&family=Jura:wght@400;700&family=Muli:wght@400;700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Oswald:wght@200;400;700&display=swap');
 
-/* /////////-BASIC SETUP-////////////// */
+/* /////////-BASIC SETUP-////////
+#cb8333
+#d9a868
+////// */
 :root {
 	--brown: #2d1e1f;
 	--light-brown: rgb(163,84,33);
@@ -24,12 +27,13 @@ h2,
 h4,
 h5 {
 	font-family: 'Oleo Script', cursive !important;
-	/*   letter-spacing: 0.25rem !important;
- */
+	 
+
 }
 h3,
 h6 {
 	font-family: 'Oswald', sans-serif !important;
+	letter-spacing: 0.1rem !important;
 }
 
 .text-responsive {
@@ -210,7 +214,7 @@ h6 {
 
 .btn-gold:active {
 	transform: translateY(-0.1rem);
-	box-shadow: 0 .5rem 1rem rgba($black, .2);
+	box-shadow: 0 .5rem 1rem rgba(black, .2);
 }
 
 /* /////////-FOOTER-////////////// */
