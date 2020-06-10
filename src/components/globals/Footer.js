@@ -16,7 +16,7 @@ export default function Footer() {
 				</div>
 				<div className="row">
 					<div className=" mt-2 mx-auto col-10  text-yellow text-center text-capitalize">
-						<h6>All rights reserved &copy;{new Date().getFullYear().toString()}</h6>
+						<h5>All rights reserved &copy;{new Date().getFullYear().toString()}</h5>
 
     
 						<a class="btn btn-social-icon btn-twitter ">

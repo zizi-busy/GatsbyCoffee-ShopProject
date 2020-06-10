@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BackgroundSection from '../components/globals/BackgroundSection'
 import Info from '../components/home/Info'
+import Menu from '../components/home/Menu'
 
 
 const IndexPage = ({ data }) => (
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => (
   sub='No one does coffee like Penny:!'
   />
   <Info/>
+  <Menu items={data.menu} />
 	</Layout>
 );
 
@@ -29,6 +31,25 @@ export const query = graphql`
 				}
 			}
 		}
+
+		menu: allContentfulCoffeeItem {
+			edges {
+			  node {
+				id
+				title
+				description {
+				  description
+				}
+				price
+				category
+				img {
+				  fixed(width: 70, height: 70) {
+					...GatsbyContentfulFixed_tracedSVG
+				  }
+				}
+			  }
+			}
+		  }
 	}
 `;
 

@@ -15,7 +15,7 @@ export default function Info() {
                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. quos esse nam repudiandae deleniti fuga ducimus quidem laborum excepturi aut maxime, id sequi laudantium perferendis officiis odio labore aliquam! Aperiam ullam ratione voluptas! Quam consequatur dolore ipsam rem ratione. Illum magni velit ut illo, delectus eligendi obcaecati quis aperiam ipsa voluptatum. Porro sequi itaque, possimus ea nesciunt quidem iure est ullam ex. Minus.
                          </p>
                          <Link to="/about">
-                             <button className="btn text-uppercase btn-gold">About page</button>
+                             <button className="btn text-uppercase btn-yellow">About page</button>
                          </Link>
                         </div>
                     </div>
