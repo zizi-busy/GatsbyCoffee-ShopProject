@@ -52,17 +52,14 @@ export default class Navbar extends Component {
 						{this.state.links.map((link) => {
 							return (
 								<li key={link.id} className="nav-item mx-sm-4">
-									<Link activeStyle={{
-										backgroundColor: 'rgb(227, 177, 53, 0.7)'
-						
-									}} to={link.path} className="nav-link  text-white text-capitalize">
+									<Link to={link.path} className="nav-link text-capitalize">
 										{link.text}
 									</Link>
 								</li>
 							);
 						})}
 						<li className="navi-item mx-sm-4">
-							<FaCartArrowDown className="cart-icon" />
+							<FaCartArrowDown className="cart-icon snipcart-checkout" />
 						</li>
 					</ul>
 				</div>

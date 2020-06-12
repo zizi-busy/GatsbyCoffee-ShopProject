@@ -64,12 +64,21 @@ h3
 	z-index: 100;
 }
 
+.nav-link.active {
+	color: white;
+	background-color: #FF5E18 !important;
+	border-color: #FF5E18 !important;
+}
 .nav-link:hover{
-	background-color: rgb(227, 177, 53, .7);
 
-		box-shadow: 0 1rem 2rem rgba(0,0,0, .3);
+
+	/* 	box-shadow: 0 1rem 2rem rgba(0,0,0, .3); */
+		color: var(--yellow)!important;
 	
 }
+
+*/
+
 
 @media only screen and (max-width: 568px) {
 	.navbar {
@@ -78,9 +87,9 @@ h3
 	.navbar-nav {
 	
 		padding-bottom: 20px;
+		
 	}
 
-	
 }
 /* /////////-HERO-////////////// */
 
@@ -259,6 +268,8 @@ h3
 }
 
 /* /////////-MENU-SECTION-////////////// */
-.menu-section{
+.menu-section,
+.contact-section
+{
 	background-color: var(--grey);
 }
