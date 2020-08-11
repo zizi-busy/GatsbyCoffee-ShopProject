@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from '../globals/Title';
 import Img from 'gatsby-image';
 
+
 const getCategories = (items) => {
 	let tempItems = items.map((items) => {
 		return items.node.category;
@@ -42,7 +43,7 @@ export default class Menu extends Component {
 			return (
 				<section className="menu-section py-5">
 					<div className="container">
-						<Title title="Our menu" />
+						<Title  className="col text-center text-dark mb-3" title="Our menu" message="organic flavor" />
 						{/* Categoreies */}
 						<div className="row mb-5">
 							<div className="col-10 mx-auto text-center">
@@ -68,21 +69,21 @@ export default class Menu extends Component {
 								return (
 									<div key={node.id} className="col-11 col-md-6 my-3 d-flex mx-auto">
 										<div>
-											<Img fixed={node.img.fixed} />
+											<Img className="menu-img" fixed={node.img.fixed} />
 										</div>
 										{/* item description */}
 										<div className="flex-grow-1 px-3">
 											<div className="d-flex justify-content-between">
-												<h4 className="mb-0 text-capitalize">
-													<small>{node.title}</small>
+												<h4 className="mb-0 text-capitalize menu-title">
+													<h5 className="text-dark menu-title ">{node.title}</h5>
 												</h4>
-												<h4 className="mb-0 text-yellow">
+												<h4 className="mb-0 price">
 													<small>${node.price}</small>
 												</h4>
 											</div>
-											<p className="text-muted">
-												<small>{node.description.description}</small>
-											</p>
+
+												<h6 className=" text-dark description">{node.description.description}</h6>
+											
 										</div>
 									</div>
 								);
@@ -95,7 +96,7 @@ export default class Menu extends Component {
 			return (
 				<section className="menu py-5">
 					<div className="container">
-						<Title title="Best of our menu" />
+						<Title title="Best of our menu"  />
 						<div className="row">
 							<div className="col-10 col-sm-6 mx-auto text-center text-capitalize">
 								<h1>There are no items to display</h1>

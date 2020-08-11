@@ -6,15 +6,16 @@ import "./layout.css"
 import './bootstrap.min.css'
 import Navbar from './globals/Navbar'
 import Footer from './globals/Footer'
+/* import { ParallaxProvider } from 'react-scroll-parallax'; */
 
 const Layout = ({ children }) => 
 
 
-    <>
+<>
     <Navbar/>
   {children}
   <Footer/>
-    </>
+</>
   
 
 

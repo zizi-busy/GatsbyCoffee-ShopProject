@@ -31,7 +31,7 @@ export default function Products() {
 				return (
               <section className= "products-section py-5">
                   <div className="container">
-                     <Title title = "our products" />
+                     <Title className="col text-center mb-3" title = "our products" message="selected items" />
                      <div className="row">
                          {data.products.edges.map(({node:product})=>{
                             return <ProductCard key = {product.id} product={product} />

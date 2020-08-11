@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { Link } from 'gatsby';
-import logo from '../../images/coffee-gold.svg';
+import logo from '../../images/p-logo.png';
 export default function Footer() {
 	return (
 		<footer className="footer py-3">
@@ -16,7 +16,7 @@ export default function Footer() {
 				</div>
 				<div className="row">
 					<div className=" mt-2 mx-auto col-10  text-yellow text-center text-capitalize">
-						<h5>All rights reserved &copy;{new Date().getFullYear().toString()}</h5>
+						<h6 className="footer-text">All rights reserved &copy;{new Date().getFullYear().toString()}</h6>
 
     
 						<a class="btn btn-social-icon btn-twitter ">

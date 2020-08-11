@@ -6,12 +6,12 @@ export default function ProductCard({ product }) {
 		<div className="col-10 col-sm-8 col-lg-4 mx-auto my-3">
 			<div className="card" style={{ minHeight: '100%' }}>
 				<Img fluid={product.img.fluid} className="card-img-top" />
-				<div className="card-body text-center">
+				<div className="card-body text-center text-capitalize">
 					<h4>
 						<small>{product.title}</small>
 					</h4>
 					<h4>
-						<small>${product.price}</small>
+						<small className="product-price">${product.price}</small>
 					</h4>
 					<button className="btn btn-yellow mt-3 text-capitalize snipcart-add-item" 
 					data-item-id={product.id}
